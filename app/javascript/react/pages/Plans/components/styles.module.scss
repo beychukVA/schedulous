@@ -1,0 +1,10 @@
+@use "~/styles/variables" as *;
+
+.interval {
+  display: flex;
+  align-items: center;
+
+  & > div {
+    flex: 1;
+  }
+}

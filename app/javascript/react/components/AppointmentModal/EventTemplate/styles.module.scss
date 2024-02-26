@@ -1,0 +1,17 @@
+@use "~/styles/variables" as *;
+
+.container {
+  display: flex;
+}
+
+.left_container {
+  padding: 0 32px 12px 12px;
+  border-right: 1px solid #d8e3f8;
+}
+
+.right_container {
+  min-width: 328px;
+  height: 630px;
+  overflow: hidden;
+  padding: 16px 12px 12px 32px;
+}

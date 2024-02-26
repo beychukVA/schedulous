@@ -1,0 +1,23 @@
+@use "~/styles/variables" as *;
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.profile {
+  padding-bottom: 18px;
+}
+
+.icon {
+  padding-bottom: 18px;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &Checked {
+    background-color: $success;
+  }
+}

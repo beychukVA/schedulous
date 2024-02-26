@@ -1,0 +1,22 @@
+@use "~/styles/variables" as *;
+
+.title {
+  padding-top: 16px;
+  padding-bottom: 10px;
+}
+.left_buttons_container {
+  padding-top: 73px;
+  & :not(:first-child) {
+    margin-left: 16px;
+  }
+}
+.button {
+  padding: 8px 63px;
+}
+.red {
+  color: $error;
+  border-color: $error;
+}
+.popup_container {
+  width: fit-content;
+}

@@ -1,0 +1,31 @@
+.container {
+  width: 100%;
+  padding: 15px 32px;
+}
+
+.input {
+  height: 80px;
+  padding: 15px;
+  resize: none;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  padding-top: 16px;
+}
+
+.button {
+  margin-left: auto;
+  padding: 8px 70px;
+}
+
+.icon_container {
+  display: flex;
+
+  & :not(:first-child) {
+    margin-left: 17px;
+  }
+}

@@ -1,0 +1,22 @@
+@use "~/styles/variables" as *;
+
+.container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  right: $subnav-width;
+  left: 0;
+  width: calc(100% - #{$subnav-width + $nav-width});
+  height: calc(100vh - 85px);
+  border-left: 1px solid $gray-400;
+  border-right: 1px solid $gray-400;
+  transition: width 500ms ease;
+  overflow: hidden;
+
+  &.collapsed {
+    right: 0;
+    width: 100%;
+  }
+}

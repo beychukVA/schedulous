@@ -1,0 +1,42 @@
+@use "~/styles/variables" as *;
+
+.settings {
+  display: inline;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: $spacing-small;
+  margin-bottom: $spacing-large;
+
+  .setting {
+    padding: $spacing;
+    border-radius: $radius;
+    border: 1px solid $gray-400;
+    flex: 1;
+    margin-bottom: $spacing;
+
+    &Inner {
+      display: flex;
+    }
+
+    &Icon {
+      width: 50px;
+      height: 50px;
+      margin-right: $spacing;
+      background: $gray-200;
+      border-radius: $radius;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &Content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: left;
+    }
+
+    &Text {
+      padding-right: 5px;
+    }
+  }
+}

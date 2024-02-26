@@ -1,0 +1,31 @@
+@use "~/styles/variables" as *;
+
+.container {
+  padding-top: 36px;
+}
+
+.calendar {
+}
+
+.schedules_container {
+}
+
+.schedules_container_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 1px solid #d8e3f8;
+}
+
+.schedules_popup {
+}
+
+.button_container {
+  width: 100%;
+  padding: 16px;
+  background-color: $white;
+}
+
+.button {
+}

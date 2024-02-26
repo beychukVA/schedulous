@@ -1,0 +1,38 @@
+@use "~/styles/variables" as *;
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 16px 32px;
+  border-bottom: 1px solid $gray-400;
+}
+
+.status {
+  display: flex;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: $purple;
+  margin-right: 16px;
+}
+
+.status_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.expand_icon {
+  align-items: center;
+  margin: 0 0 0 42px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}

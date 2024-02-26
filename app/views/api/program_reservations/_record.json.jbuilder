@@ -1,0 +1,7 @@
+# frozen_string_literal: true
+
+json.id program_reservation.id
+json.person_id program_reservation.person_id
+json.program_instance_id program_reservation.program_instance_id
+json.attend program_reservation.attend
+json.canceled_at program_reservation.canceled_at

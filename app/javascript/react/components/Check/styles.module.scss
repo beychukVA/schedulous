@@ -1,0 +1,41 @@
+@use "~/styles/variables" as *;
+
+.check {
+  background: $white;
+  box-shadow: inset 0 0 0 1px $gray-400;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &Small {
+    width: 16px;
+    height: 16px;
+  }
+
+  &Selected {
+    &Blue {
+      background: $primary;
+      box-shadow: inset 0 0 0 1px $primary;
+    }
+
+    &Green {
+      background: $success;
+      box-shadow: inset 0 0 0 1px $success;
+    }
+
+    &Red {
+      background: $error;
+      box-shadow: inset 0 0 0 1px $error;
+    }
+  }
+
+  &Square {
+    border-radius: 0;
+  }
+
+  &Large {
+    width: 24px;
+    height: 24px;
+  }
+}

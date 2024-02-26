@@ -1,0 +1,23 @@
+@use "~/styles/variables" as *;
+
+.container {
+  position: absolute;
+  right: 0;
+  width: $subnav-width + $nav-width;
+  height: calc(100vh - 85px);
+  padding: 20px 32px;
+  overflow: hidden;
+  transition: width 500ms ease;
+
+  &.collapsed {
+    width: 0;
+    height: 0;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+}

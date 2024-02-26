@@ -1,0 +1,37 @@
+@use "~/styles/variables" as *;
+
+.tabs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+}
+
+.tab {
+  padding: 10px 0;
+  cursor: pointer;
+
+  &:not(:first-child) {
+    margin-left: 32px;
+  }
+
+  &__selected {
+    border-bottom: 4px solid $black;
+  }
+}
+
+.tab_label {
+}
+
+.collapse_icon {
+  align-items: center;
+  margin: 0 0 0 42px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}

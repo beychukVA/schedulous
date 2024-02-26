@@ -1,0 +1,60 @@
+@use "~/styles/variables" as *;
+
+.membership-confirm-detail {
+  margin-bottom: 20px;
+}
+
+.title {
+  margin-bottom: 20px;
+  color: black;
+  font-weight: $bold-weight;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.content-label {
+  font-weight: $medium-weight;
+  color: $gray-600;
+}
+
+.edit-icon {
+  margin-right: 5px;
+  color: $primary;
+}
+
+.show-input {
+  display: flex;
+  color: $primary;
+  font-weight: $medium-weight;
+}
+
+.hide-input {
+  display: flex;
+  color: $black;
+  font-weight: $medium-weight;
+}
+
+.membership-date {
+  font-weight: $medium-weight;
+  color: $black;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.price-text {
+  max-width: 150px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}

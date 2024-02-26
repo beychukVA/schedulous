@@ -1,0 +1,30 @@
+@use "~/styles/variables" as *;
+
+.container {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.templates_container {
+  width: 100%;
+  height: 55vh;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  margin-top: 17px;
+
+  & > :not(:first-child) {
+    margin-top: 8px;
+  }
+}
+
+.input {
+}
+
+.button_container {
+  width: 100%;
+  padding: 16px;
+  background-color: $white;
+}
+
+.button {
+}

@@ -1,0 +1,44 @@
+@use "~/styles/variables" as *;
+
+.title {
+  padding-top: 16px;
+  padding-bottom: 10px;
+}
+
+.left_buttons_container {
+  padding-top: 32px;
+  & :not(:first-child) {
+    margin-left: 16px;
+  }
+}
+
+.date_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.time_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.button {
+  padding: 8px 52px;
+}
+
+.red {
+  color: $error;
+  border-color: $error;
+}
+
+.popup_container {
+  width: 100%;
+}
+
+.select {
+  flex: 1;
+}

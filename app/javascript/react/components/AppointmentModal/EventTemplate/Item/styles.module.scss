@@ -1,0 +1,32 @@
+.container {
+  width: fit-content;
+  padding-right: 16px;
+}
+
+.title {
+  margin-bottom: 7px;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.icon {
+  & svg {
+    display: block;
+  }
+}
+
+.subtitle {
+  margin-left: 16px;
+}
+
+.margin_top_large {
+  margin-top: 16px;
+}
+
+.margin_bottom_large {
+  margin-bottom: 16px;
+}

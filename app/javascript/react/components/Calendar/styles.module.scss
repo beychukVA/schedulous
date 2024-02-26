@@ -1,0 +1,128 @@
+@use "~/styles/variables/" as *;
+
+.table {
+  width: auto;
+}
+
+.hour {
+  height: 60px;
+  position: absolute;
+  width: 70px;
+  text-align: center;
+}
+
+.table {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNSIgaGVpZ2h0PSI2MCIgdmlld0JveD0iMCAwIDUgNjAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxtYXNrIGlkPSJwYXRoLTEtaW5zaWRlLTFfMzg3XzI4NDUiIGZpbGw9IndoaXRlIj4KPHBhdGggZD0iTTAgMEg1VjYwSDBWMFoiLz4KPC9tYXNrPgo8cGF0aCBkPSJNMCAwSDVWNjBIMFYwWiIgZmlsbD0iI0Y3RkFGQyIvPgo8cGF0aCBkPSJNNSA1OUgwVjYxSDVWNTlaIiBmaWxsPSIjRTJFOEYwIiBtYXNrPSJ1cmwoI3BhdGgtMS1pbnNpZGUtMV8zODdfMjg0NSkiLz4KPG1hc2sgaWQ9InBhdGgtMy1pbnNpZGUtMl8zODdfMjg0NSIgZmlsbD0id2hpdGUiPgo8cGF0aCBkPSJNMCAwSDVWMzBIMFYwWiIvPgo8L21hc2s+CjxwYXRoIGQ9Ik0wIDBINVYzMEgwVjBaIiBmaWxsPSIjRjdGQUZDIi8+CjxwYXRoIGQ9Ik0wIDMwLjVIMS4yNVYyOS41SDBWMzAuNVpNMy43NSAzMC41SDVWMjkuNUgzLjc1VjMwLjVaTTAgMzFIMS4yNVYyOUgwVjMxWk0zLjc1IDMxSDVWMjlIMy43NVYzMVoiIGZpbGw9IiNFMkU4RjAiIG1hc2s9InVybCgjcGF0aC0zLWluc2lkZS0yXzM4N18yODQ1KSIvPgo8L3N2Zz4K");
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background: $gray-100;
+  border-bottom: 2px solid $border-color;
+  z-index: 2;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.tableOverflow {
+  overflow-x: auto;
+}
+
+.column {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  background-repeat: repeat;
+  border-left: 1px solid $gray-300;
+  column-fill: auto;
+  min-width: 300px;
+}
+
+.hourColumn {
+  text-align: center;
+  position: relative;
+  z-index: 100;
+  background: $white;
+  background: $gray-100;
+}
+
+.event {
+  position: absolute;
+  width: 160px;
+  height: 60px;
+  background: $white;
+  padding: $spacing-small;
+  border: 1px solid $gray-400;
+  display: flex;
+}
+
+.eventTitle {
+  font-size: $small;
+  font-weight: $bold-weight;
+  color: $gray-900;
+  line-height: 1;
+  margin-bottom: $spacing-small;
+}
+
+.eventInner {
+  padding: 0 0 0 $spacing-small;
+
+  &appointment {
+    border-left: 3px solid $orange;
+  }
+
+  &class {
+    border-left: 3px solid $purple;
+  }
+}
+
+.calendarHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  height: 70px;
+  border-bottom: 1px solid $gray-300;
+  padding: 0 $spacing;
+}
+
+.weekSelector {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.weekSelectorDate {
+  font-size: $h6;
+  font-weight: $bold-weight;
+  color: $gray-600;
+  line-height: 1;
+  margin: 0 $spacing-small;
+  text-align: center;
+  min-width: 150px;
+}
+
+.chevron {
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+
+  &Right {
+    transform: rotate(180deg);
+  }
+}
+
+.capacity {
+  font-size: $small;
+  color: $gray-600;
+  line-height: 1;
+
+  &Full {
+    color: $error;
+  }
+}

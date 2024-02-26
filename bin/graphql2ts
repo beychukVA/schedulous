@@ -1,0 +1,23 @@
+#!/bin/bash
+
+set -e
+
+main() {
+  local bin_dir="$(cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd)"
+  local frontend_dir="$(dirname "$bin_dir")/app/javascript/react"
+
+  find $frontend_dir/types/graphql -type f ! -name globalTypes.ts | xargs rm -f
+
+  bundle exec rails graphql:export_schema graphql:fragment_types
+
+  cd $frontend_dir && apollo codegen:generate \
+    --localSchemaFile="graphqlSchema.json" \
+    --addTypename \
+    --tagName=gql\
+    --target=typescript \
+    --includes="{components,pages,utils,hooks,layouts}/**/*.{tsx,ts}" \
+    --outputFlat="types/graphql/types.ts"
+}
+
+main
+

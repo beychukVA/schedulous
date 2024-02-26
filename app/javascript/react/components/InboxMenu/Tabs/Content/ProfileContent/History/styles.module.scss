@@ -1,0 +1,24 @@
+.container {
+  width: 100%;
+  height: 270px;
+  margin-top: 36px;
+}
+
+.title_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content_container {
+  height: 240px;
+
+  & > :not(:first-child) {
+    margin-top: 8px;
+  }
+}
+
+.scroll {
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}

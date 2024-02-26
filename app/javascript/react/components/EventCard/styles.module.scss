@@ -1,0 +1,42 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.borders {
+  border: 1px solid #cbd5e0;
+  border-radius: 10px;
+}
+
+.border_bottom {
+  padding: 0 0 10px 0;
+  border-bottom: 1px solid #cbd5e0;
+  border-radius: 0;
+}
+
+.event_detail {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 5px;
+}
+
+.title {
+  padding: 0;
+  margin: 0;
+}
+
+.sub_title {
+  padding: 0;
+  margin: 0;
+}
+
+.icon {
+  cursor: pointer;
+  & > svg {
+    display: block;
+  }
+}

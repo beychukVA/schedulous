@@ -1,0 +1,155 @@
+@use "~/styles/variables" as *;
+
+.flex {
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.flex-align-center {
+  align-items: center;
+}
+
+.flex-align-flex-end {
+  align-items: flex-end;
+}
+
+.flex-align-flex-start {
+  align-items: flex-start;
+}
+
+.flex-direction-column {
+  flex-direction: column;
+}
+
+.flex-direction-row {
+  flex-direction: row;
+}
+
+.flex-justify-center {
+  justify-content: center;
+}
+
+.flex-justify-flex-end {
+  justify-content: flex-end;
+}
+
+.flex-justify-flex-start {
+  justify-content: flex-start;
+}
+
+.flex-justify-space-around {
+  justify-content: space-around;
+}
+
+.flex-justify-space-between {
+  justify-content: space-between;
+}
+
+.flex-justify-space-evenly {
+  justify-content: space-evenly;
+}
+
+.flex-auto-width {
+  width: auto;
+}
+
+@media (--mobile) {
+  .mobile-flex-align-center {
+    align-items: center;
+  }
+
+  .mobile-flex-align-flex-end {
+    align-items: flex-end;
+  }
+
+  .mobile-flex-align-flex-start {
+    align-items: flex-start;
+  }
+
+  .mobile-flex-direction-column {
+    flex-direction: column;
+  }
+
+  .mobile-flex-direction-row {
+    flex-direction: row;
+  }
+
+  .mobile-flex-justify-center {
+    justify-content: center;
+  }
+
+  .mobile-flex-justify-flex-end {
+    justify-content: flex-end;
+  }
+
+  .mobile-flex-justify-flex-start {
+    justify-content: flex-start;
+  }
+
+  .mobile-flex-justify-space-around {
+    justify-content: space-around;
+  }
+
+  .mobile-flex-justify-space-between {
+    justify-content: space-between;
+  }
+
+  .mobile-flex-justify-space-evenly {
+    justify-content: space-evenly;
+  }
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+/* Item margin */
+.row-item-margin-xSmall > * + * {
+  margin-left: $spacing-x-small;
+}
+
+.row-item-margin-small > * + * {
+  margin-left: $spacing-small;
+}
+
+.row-item-margin-medium > * + * {
+  margin-left: $spacing;
+}
+
+.row-item-margin-large > * + * {
+  margin-left: $spacing-large;
+}
+
+.row-item-margin-xLarge > * + * {
+  margin-left: $spacing-x-large;
+}
+
+.column-item-margin-xSmall > * + * {
+  margin-top: $spacing-x-small;
+}
+
+.column-item-margin-small > * + * {
+  margin-top: $spacing-small;
+}
+
+.column-item-margin-medium > * + * {
+  margin-top: $spacing;
+}
+
+.column-item-margin-large > * + * {
+  margin-top: $spacing-large;
+}
+
+.column-item-margin-xLarge > * + * {
+  margin-top: $spacing-x-large;
+}
+
+/* Helpers */
+.expand {
+  flex: 1;
+}
+
+.expand.right {
+  text-align: right;
+}

@@ -1,0 +1,64 @@
+@use "~/styles/variables" as *;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 32px;
+  width: 100%;
+}
+
+.left {
+  align-self: flex-start;
+}
+
+.right {
+  align-items: flex-end;
+
+  .text {
+    background-color: $primary-100;
+  }
+
+  .sender_container {
+    justify-content: flex-end;
+  }
+}
+
+.text {
+  width: 300px;
+  padding: 10px;
+  text-align: start;
+  background-color: $gray-50;
+  border: 1px solid $gray-300;
+  border-radius: 10px;
+}
+
+.sender_container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 4px;
+  margin-bottom: 16px;
+}
+
+.avatar {
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.name {
+  margin-right: 8px;
+  font-weight: 800px;
+  font-size: 10px;
+  line-height: 15px;
+}
+
+.email {
+  font-weight: 400px;
+  font-size: 10px;
+  line-height: 15px;
+}
+
+.time {
+}

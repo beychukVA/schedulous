@@ -1,0 +1,39 @@
+@use "~/styles/variables" as *;
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 285px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid $gray-400;
+  cursor: pointer;
+
+  &:hover .favorite_icon {
+    display: block;
+  }
+}
+
+.favorite_icon {
+}
+
+.icon_visible {
+  display: block;
+}
+
+.icon_invisible {
+  display: none;
+}
+
+.content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.avatar {
+  margin-right: 16px;
+}

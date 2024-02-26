@@ -1,0 +1,48 @@
+@use "~/styles/variables" as *;
+
+.header {
+  padding: 0 0 $spacing 0;
+  border-bottom: 1px solid $gray-400;
+  margin-bottom: $spacing;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: top;
+
+  &WithToggle {
+    padding-bottom: 0;
+  }
+
+  &Close:hover {
+    cursor: pointer;
+  }
+}
+
+.headerContent {
+}
+
+.title {
+  font-size: $h5;
+  font-weight: $bold-weight;
+  color: $gray-900;
+}
+
+.subtitle {
+  font-size: $h6;
+  font-weight: $medium-weight;
+  color: $gray-600;
+}
+
+.favorite_container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.favorite_icon {
+  margin-right: 10px;
+
+  & > svg {
+    display: block;
+  }
+}

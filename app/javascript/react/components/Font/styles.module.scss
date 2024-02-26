@@ -1,0 +1,66 @@
+@forward "~/styles/variables/colors";
+
+$font-size-map: (
+  "h6": 18px,
+  "h5": 20px,
+  "h4": 24px,
+  "h3": 32px,
+  "h2": 40px,
+  "h1": 48px,
+  "base": 16px,
+  "xSmall": 10px,
+  "small": 12px,
+  "medium": 14px,
+  "large": 16px,
+  "xLarge": 18px,
+);
+
+.strike {
+  text-decoration: line-through;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.semiBold {
+  font-weight: 900;
+}
+
+.xBoldWeight {
+  font-weight: 800;
+}
+
+.boldWeight {
+  font-weight: bold;
+}
+
+.mediumWeight {
+  font-weight: 500;
+}
+
+.regularWeight {
+  font-weight: 400;
+}
+
+.center {
+  text-align: center;
+}
+
+@each $font-size-key, $font-size in $font-size-map {
+  .#{$font-size-key} {
+    font-size: #{$font-size};
+  }
+}
